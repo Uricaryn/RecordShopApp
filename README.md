@@ -4,7 +4,27 @@ The **Record Shop Application** is a comprehensive software suite designed to ma
 
 ## Project Structure
 
-### 1. RecordShopService
+### 1. RecordShopCore
+This library provides additional business logic, concrete implementations, enums, and interfaces that enhance the functionality of the main service.
+
+- **Project File**: `RecordShopCore.csproj`
+- **Key Directories**:
+  - `Concrete/`: Contains concrete classes implementing interfaces.
+  - `Enum/`: Enum definitions used across the application.
+  - `Interface/`: Interfaces defining contracts used by other services.
+
+
+### 2. RecordShopAppDAL
+The Data Access Layer manages all database-related operations including context configurations and migrations.
+
+- **Project File**: `RecordShopAppDAL.csproj`
+- **Key Directories**:
+  - `Context/`: Database context and configurations.
+  - `Migrations/`: Contains migration files for database schema updates.
+  - `Configuration/`: Configurations related to the database.
+  - `Interface/`: Interfaces specific to data access.
+
+### 3. RecordShopService
 This is the backend service responsible for handling the main business logic and service operations of the application.
 
 - **Project File**: `RecordShopService.csproj`
@@ -14,24 +34,6 @@ This is the backend service responsible for handling the main business logic and
   - `bin/`: Contains compiled binaries and DLLs.
   - `obj/`: Contains temporary files and build outputs.
 
-### 2. ClassLibrary1
-This library provides additional business logic, concrete implementations, enums, and interfaces that enhance the functionality of the main service.
-
-- **Project File**: `ClassLibrary1.csproj`
-- **Key Directories**:
-  - `Concrete/`: Contains concrete classes implementing interfaces.
-  - `Enum/`: Enum definitions used across the application.
-  - `Interface/`: Interfaces defining contracts used by other services.
-
-### 3. RecordShopAppDAL
-The Data Access Layer manages all database-related operations including context configurations and migrations.
-
-- **Project File**: `RecordShopAppDAL.csproj`
-- **Key Directories**:
-  - `Context/`: Database context and configurations.
-  - `Migrations/`: Contains migration files for database schema updates.
-  - `Configuration/`: Configurations related to the database.
-  - `Interface/`: Interfaces specific to data access.
 
 ### 4. RecordShopAppUI
 The user interface component, likely built with Windows Forms or WPF, provides a graphical interface for interacting with the backend services.
